@@ -1,0 +1,2669 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.1">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.1" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.0.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="叶子也会飞的个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="叶子也会飞">
+<meta property="og:url" content="http://flyleaf.fun/index.html">
+<meta property="og:site_name" content="叶子也会飞">
+<meta property="og:description" content="叶子也会飞的个人博客">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="叶子也会飞">
+<meta name="twitter:description" content="叶子也会飞的个人博客">
+
+
+
+
+
+
+  <link rel="canonical" href="http://flyleaf.fun/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>叶子也会飞</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">叶子也会飞</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">That‘s awsome！</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home menu-item-active">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-python">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/python" rel="section"><i class="menu-item-icon fa fa-fw fa-code"></i> <br>Python</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-mac">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/mac" rel="section"><i class="menu-item-icon fa fa-fw fa-laptop"></i> <br>Mac</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-网络">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/network" rel="section"><i class="menu-item-icon fa fa-fw fa-internet-explorer"></i> <br>网络</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-心理学">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/psychology" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>心理学</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://flyleaf.fun/2018/01/18/Markdown之表格宽度设置/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jeffrey">
+      <meta itemprop="description" content="叶子也会飞的个人博客">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="叶子也会飞">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/01/18/Markdown之表格宽度设置/" class="post-title-link" itemprop="url">Markdown之表格宽度设置</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-01-18 22:54:00 / 修改时间：23:19:56" itemprop="dateCreated datePublished" datetime="2018-01-18T22:54:00+08:00">2018-01-18</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/network/" itemprop="url" rel="index"><span itemprop="name">network</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在表格前面添加CSS代码可以控制表格的宽度<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">table th:first-of-type &#123;  #first表示表格第一列</span><br><span class="line">    width: 100px; # 可使用%比例</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 下方是表格的 Markdown 语法 --!&gt;</span><br><span class="line">名称|值|备注</span><br><span class="line">---|---|---</span><br></pre></td></tr></table></figure></p>
+<p>未设置宽度表格宽度时，每一列都是一样宽，严重影响美观<br>设置宽度表格后：</p>
+<style>
+table th:first-of-type {
+    width: 13%;
+}
+</style>
+
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\w</td>
+<td>匹配字母数字及下划线</td>
+</tr>
+<tr>
+<td>\W</td>
+<td>匹配非字母数字下划线</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>匹配任意空白字符，等价于 [\t\n\r\f].</td>
+</tr>
+</tbody>
+</table>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://flyleaf.fun/2018/01/17/Mac-使用-Alfred-替代-Spotlight/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jeffrey">
+      <meta itemprop="description" content="叶子也会飞的个人博客">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="叶子也会飞">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/01/17/Mac-使用-Alfred-替代-Spotlight/" class="post-title-link" itemprop="url">Mac 使用 Alfred 替代 Spotlight</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-01-17 23:58:00" itemprop="dateCreated datePublished" datetime="2018-01-17T23:58:00+08:00">2018-01-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-18 23:15:38" itemprop="dateModified" datetime="2018-01-18T23:15:38+08:00">2018-01-18</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/mac/" itemprop="url" rel="index"><span itemprop="name">mac</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h6 id="安装Alfred"><a href="#安装Alfred" class="headerlink" title="安装Alfred"></a>安装Alfred</h6><p>先试试免费版本，<a href="https://www.alfredapp.com/" target="_blank" rel="noopener">Alfred官网</a></p>
+<h6 id="关闭spotlight"><a href="#关闭spotlight" class="headerlink" title="关闭spotlight"></a>关闭spotlight</h6><ul>
+<li>禁用spotlight服务<br><code>sudo mdutil -a -i off</code></li>
+<li>删除菜单栏spotlight图标  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /System/Library/CoreServices/</span><br><span class="line">sudo mv Search.bundle/ Search2.bundle/</span><br><span class="line">然后在活动监视器退出 SystemUIServer 进程，或者注销再登陆。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h6 id="Spotlight恢复方法"><a href="#Spotlight恢复方法" class="headerlink" title="Spotlight恢复方法"></a>Spotlight恢复方法</h6><ul>
+<li>启用spotlight服务，<br><code>sudo mdutil -a -i on</code></li>
+<li>恢复菜单栏图标<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /System/Library/CoreServices/</span><br><span class="line">sudo mv Search2.bundle/ Search.bundle/</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>然后在活动监视器退出 SystemUIServer 进程，或者注销再登陆。</p>
+<h6 id="配置Alfred"><a href="#配置Alfred" class="headerlink" title="配置Alfred"></a>配置Alfred</h6><ul>
+<li><p>Webserch搜索设置  </p>
+<ul>
+<li><p>添加百度搜索：<br>链接：<a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;wd={query}" target="_blank" rel="noopener">https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;wd={query}</a><br>title：百度<br>keyword：bd # 自行设置调用关键词。输入bd XXX 即可用百度搜索<br>设置图标：复制百度icon图片到右边方框内  </p>
+</li>
+<li><p>淘宝搜索<br>Url：<a href="https://s.taobao.com/search?oe=utf-8&amp;f=8&amp;q={query}" target="_blank" rel="noopener">https://s.taobao.com/search?oe=utf-8&amp;f=8&amp;q={query}</a><br>title：淘宝<br>keyword：tb<br>设置图标：复制淘宝icon图片到右边方框内  </p>
+</li>
+<li><p>github<br>url：<a href="https://github.com/search?utf8=%E2%9C%93&amp;q={query}" target="_blank" rel="noopener">https://github.com/search?utf8=%E2%9C%93&amp;q={query}</a><br>title：github<br>keyword：github<br>设置图标：复制github的icon图片到右边方框内  </p>
+</li>
+</ul>
+</li>
+<li><p>设置默认搜索引擎为百度<br>  Features &gt; Default Results &gt; Fallbacks &gt;Setup fallbacks results<br>  点击右下角 <code>+</code> &gt; Custom Search &gt; 选择刚添加的百度 &gt; 保存完成！</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://flyleaf.fun/2018/01/17/正则表达式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jeffrey">
+      <meta itemprop="description" content="叶子也会飞的个人博客">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="叶子也会飞">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/01/17/正则表达式/" class="post-title-link" itemprop="url">正则表达式</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-01-17 12:17:00" itemprop="dateCreated datePublished" datetime="2018-01-17T12:17:00+08:00">2018-01-17</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-19 13:53:06" itemprop="dateModified" datetime="2018-01-19T13:53:06+08:00">2018-01-19</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Python 之正则表达式，使用前必须先导入re模块</p>
+<h6 id="常见匹配模式"><a href="#常见匹配模式" class="headerlink" title="常见匹配模式"></a>常见匹配模式</h6><style>
+table th:first-of-type {
+    width: 13%;
+}
+</style>
+
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\w</td>
+<td>匹配字母数字及下划线</td>
+</tr>
+<tr>
+<td>\W</td>
+<td>匹配非字母数字下划线</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>匹配任意空白字符，等价于 [\t\n\r\f].</td>
+</tr>
+<tr>
+<td>\S</td>
+<td>匹配任意非空字符</td>
+</tr>
+<tr>
+<td>\d</td>
+<td>匹配任意数字，等价于 [0-9]</td>
+</tr>
+<tr>
+<td>\D</td>
+<td>匹配任意非数字</td>
+</tr>
+<tr>
+<td>\A</td>
+<td>匹配字符串开始</td>
+</tr>
+<tr>
+<td>\Z</td>
+<td>匹配字符串结束，如果是存在换行，只匹配到换行前的结束字符串</td>
+</tr>
+<tr>
+<td>\z</td>
+<td>匹配字符串结束</td>
+</tr>
+<tr>
+<td>\G</td>
+<td>匹配最后匹配完成的位置</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>匹配一个换行符</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>匹配一个制表符</td>
+</tr>
+<tr>
+<td>^</td>
+<td>匹配字符串的开头</td>
+</tr>
+<tr>
+<td>$</td>
+<td>匹配字符串的末尾。</td>
+</tr>
+<tr>
+<td>.</td>
+<td>匹配任意字符，除了换行符，当re.DOTALL标记被指定时，则可以匹配包括换行符的任意字符。</td>
+</tr>
+<tr>
+<td>[…]</td>
+<td>用来表示一组字符,单独列出：[amk] 匹配 ‘a’，’m’或’k’</td>
+</tr>
+<tr>
+<td>[^…]</td>
+<td>不在[]中的字符：[^abc] 匹配除了a,b,c之外的字符。</td>
+</tr>
+<tr>
+<td>*</td>
+<td>匹配0个或多个的表达式。</td>
+</tr>
+<tr>
+<td>+</td>
+<td>匹配1个或多个的表达式。</td>
+</tr>
+<tr>
+<td>?</td>
+<td>匹配0个或1个由前面的正则表达式定义的片段，非贪婪方式</td>
+</tr>
+<tr>
+<td>{n}</td>
+<td>精确匹配n个前面表达式。</td>
+</tr>
+<tr>
+<td>{n, m}</td>
+<td>匹配 n 到 m 次由前面的正则表达式定义的片段，贪婪方式</td>
+</tr>
+<tr>
+<td>a&#124;b</td>
+<td>匹配a或b</td>
+</tr>
+<tr>
+<td>( )</td>
+<td>匹配括号内的表达式，也表示一个组</td>
+</tr>
+</tbody>
+</table>
+<h6 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h6><p>re.match()</p>
+<hr>
+<p>待补充</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://flyleaf.fun/2018/01/16/Mac使用技巧之快速翻译单词/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jeffrey">
+      <meta itemprop="description" content="叶子也会飞的个人博客">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="叶子也会飞">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/01/16/Mac使用技巧之快速翻译单词/" class="post-title-link" itemprop="url">Mac使用技巧之快速翻译单词</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-01-16 15:47:00" itemprop="dateCreated datePublished" datetime="2018-01-16T15:47:00+08:00">2018-01-16</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-19 13:50:46" itemprop="dateModified" datetime="2018-01-19T13:50:46+08:00">2018-01-19</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/mac/" itemprop="url" rel="index"><span itemprop="name">mac</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>使用mac快速查看单词翻译（定义）的方法  </p>
+<ul>
+<li>在spotlight中输入你想查询的单词，点击定义一栏，即可查看翻译结果</li>
+<li>用鼠标选中文字，点击鼠标右键，查询“xxx”</li>
+<li>将鼠标放在需要翻译的单词上面，然后同时按<code>Control + Command + D</code>，即可查看单词的翻译，在文字不可选取的情况下此方法比较方便</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://flyleaf.fun/2018/01/15/利用GitHub-hexo搭建个人博客并绑定域名/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jeffrey">
+      <meta itemprop="description" content="叶子也会飞的个人博客">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="叶子也会飞">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/01/15/利用GitHub-hexo搭建个人博客并绑定域名/" class="post-title-link" itemprop="url">利用GitHub+hexo搭建个人博客并绑定域名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-01-15 11:14:00" itemprop="dateCreated datePublished" datetime="2018-01-15T11:14:00+08:00">2018-01-15</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-21 16:45:03" itemprop="dateModified" datetime="2019-03-21T16:45:03+08:00">2019-03-21</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/network/" itemprop="url" rel="index"><span itemprop="name">network</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h6 id="注册GitHub账号并添加库"><a href="#注册GitHub账号并添加库" class="headerlink" title="注册GitHub账号并添加库"></a>注册GitHub账号并添加库</h6><p>新建一个库，名字格式为：yourname.github.io<br>yourname就是你的github账户名  </p>
+<h6 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h6><p><a href="https://git-scm.com/" target="_blank" rel="noopener">Gitg官网</a></p>
+<h6 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h6><p><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node官网</a></p>
+<h6 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h6><p>使用命令行安装hexo: <code>npm install -g hexo-cli</code><br>参见：<a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">Hexo官方文档</a></p>
+<h6 id="建立网站"><a href="#建立网站" class="headerlink" title="建立网站"></a>建立网站</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init floder # floder为网站指定文件夹</span><br><span class="line">cd floder # 转到指定的文件夹</span><br><span class="line">npm install #运行安装</span><br></pre></td></tr></table></figure>
+<h6 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h6><ul>
+<li>后台管理插件命令： <code>npm install --save hexo-admin</code><br>安装好后访问 <code>localhost:4000/admin</code>设置后台账号密码，底部会生成admin配置信息，复制到<code>_config.yml</code>网站配置文件中。</li>
+</ul>
+<h6 id="更换hexo主题"><a href="#更换hexo主题" class="headerlink" title="更换hexo主题"></a>更换hexo主题</h6><ol>
+<li>将下载的主题文件夹放在网站文件夹下的themes里面</li>
+<li>更改网站配置文件，找到<code>themes</code>修改默认主题为新下载的主题名字</li>
+</ol>
+<h6 id="更改网站配置和主题配置"><a href="#更改网站配置和主题配置" class="headerlink" title="更改网站配置和主题配置"></a>更改网站配置和主题配置</h6><ol>
+<li>修改<code>_config.yml</code>文件里面的标题、描述和作者等信息。</li>
+<li>配置<code>deploy</code>，配置好才能上传至github。</li>
+<li>根据主题的帮助文档修改主题配置文件里面的导航栏、分类、图标、社交信息等。</li>
+</ol>
+<h6 id="上传网站至github及hexo常用命令"><a href="#上传网站至github及hexo常用命令" class="headerlink" title="上传网站至github及hexo常用命令"></a>上传网站至github及hexo常用命令</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean # 清楚缓存</span><br><span class="line">hexo generate # 生成静态文件</span><br><span class="line">hexo server # 启动服务器，浏览器访问`loaclhost:4000`检查网站</span><br><span class="line">hexo deploy # 部署网站，上传至github</span><br></pre></td></tr></table></figure>
+<h6 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h6><p>用记事本新建一个文件命名为<code>CNAME</code>（无后缀），里面写入你的域名<code>example.com</code>,不要加<code>http://</code>和<code>www</code>。<br>将这个<code>CNAME</code>文件放到主题里面的<code>source</code>文件夹里面。  </p>
+<p>阿里云后台添加2条解析记录</p>
+<table>
+<thead>
+<tr>
+<th>记录类型</th>
+<th>主机记录</th>
+<th>记录值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CNAME</td>
+<td>a</td>
+<td>yourname.github.io</td>
+</tr>
+<tr>
+<td>CNAME</td>
+<td>www</td>
+<td>yourname.github.io</td>
+</tr>
+</tbody>
+</table>
+<p>等待一会儿就可以用自己的域名访问了！</p>
+<h6 id="解决使用Https-提示网站不安全的问题"><a href="#解决使用Https-提示网站不安全的问题" class="headerlink" title="解决使用Https://提示网站不安全的问题"></a>解决使用<code>Https://</code>提示网站不安全的问题</h6><p><a href>待补充</a></p>
+<hr>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://flyleaf.fun/2017/10/26/Python批量下载网易云音乐歌曲/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jeffrey">
+      <meta itemprop="description" content="叶子也会飞的个人博客">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="叶子也会飞">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2017/10/26/Python批量下载网易云音乐歌曲/" class="post-title-link" itemprop="url">Python批量下载网易云音乐歌曲</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-10-26 17:58:00" itemprop="dateCreated datePublished" datetime="2017-10-26T17:58:00+08:00">2017-10-26</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-16 18:08:16" itemprop="dateModified" datetime="2018-01-16T18:08:16+08:00">2018-01-16</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>网易云音乐真实地址：<br><a href="http://music.163.com/song/media/outer/url?id=" target="_blank" rel="noopener">http://music.163.com/song/media/outer/url?id=</a> + (歌曲ID) + .mp3</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> urllib</span><br><span class="line">url_list = input (<span class="string">'请粘贴歌单网址：'</span>)<span class="comment"># 获取榜单网址</span></span><br><span class="line">gedan_id = url_list.split(<span class="string">'id='</span>)[<span class="number">1</span>]<span class="comment"># 获取榜单ID</span></span><br><span class="line">gedan_api = <span class="string">'http://music.163.com/api/playlist/detail?id='</span> + gedan_id<span class="comment"># 获取歌单API</span></span><br><span class="line">r = requests.get(gedan_api)</span><br><span class="line">arr = r.json()[<span class="string">'result'</span>][<span class="string">'tracks'</span>]    <span class="comment"># json解析</span></span><br><span class="line">songs = input (<span class="string">'请输入要下载的歌曲数量：'</span>)<span class="comment"># 输入要下载音乐的数量，1到100。</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(int(songs)):</span><br><span class="line">    name = arr[i][<span class="string">'name'</span>] + <span class="string">'.mp3'</span></span><br><span class="line">    <span class="keyword">if</span> <span class="string">'/'</span> <span class="keyword">in</span> name:</span><br><span class="line">        name = name.split(<span class="string">'/'</span>)[<span class="number">0</span>] + <span class="string">'.mp3'</span></span><br><span class="line">    link = <span class="string">'http://music.163.com/song/media/outer/url?id='</span> + str(arr[i][<span class="string">'id'</span>])+<span class="string">'.mp3'</span></span><br><span class="line">    urllib.request.urlretrieve(link, <span class="string">'Python批量下载音乐\\'</span> + name)    <span class="comment"># 提前要创建文件夹</span></span><br><span class="line">    print(str(i+<span class="number">1</span>) + <span class="string">" "</span> + name + <span class="string">' 下载完成'</span>)</span><br><span class="line"><span class="keyword">print</span> (<span class="string">'歌曲已下载完成！共 %s 首歌曲！'</span>%songs)</span><br></pre></td></tr></table></figure>
+<hr>
+<p>代码是从知乎上复制过来稍作修改的，忘记在哪个问题里面了</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://flyleaf.fun/2017/10/22/用Python随机生成一组大乐透号码/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jeffrey">
+      <meta itemprop="description" content="叶子也会飞的个人博客">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="叶子也会飞">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2017/10/22/用Python随机生成一组大乐透号码/" class="post-title-link" itemprop="url">用Python随机生成一组大乐透号码</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-10-22 17:34:00" itemprop="dateCreated datePublished" datetime="2017-10-22T17:34:00+08:00">2017-10-22</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-16 17:56:42" itemprop="dateModified" datetime="2018-01-16T17:56:42+08:00">2018-01-16</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h6 id="大乐透玩法介绍"><a href="#大乐透玩法介绍" class="headerlink" title="大乐透玩法介绍"></a>大乐透玩法介绍</h6><pre><code>单注号码为5+2，共7个数字。
+前面5个数为1-35，任选其中5个数且不可重复；
+后面2个数为1-12，任选其中2个数且不可重复。
+</code></pre><p>使用 <code>random</code> 模块 的 <code>sample</code>函数  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">import random</span><br><span class="line">numbs5 = random.sample(range(1,36),5)</span><br><span class="line">numbs2 = random.sample(range(1,13),2)</span><br><span class="line">print (&apos;机选一注双色球号码为：&apos;,numbs5,&apos;+&apos;,numbs2)</span><br></pre></td></tr></table></figure>
+<p><code>sample</code> 函数介绍：从指定序列中生成 N 个随机数，并且不会重复。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://flyleaf.fun/2017/10/18/2017-10-18安装Mac-OS-highs10-11-3成功记录/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jeffrey">
+      <meta itemprop="description" content="叶子也会飞的个人博客">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="叶子也会飞">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2017/10/18/2017-10-18安装Mac-OS-highs10-11-3成功记录/" class="post-title-link" itemprop="url">2017.10.18安装Mac OS highs10.11.3成功记录</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-10-18 11:36:00" itemprop="dateCreated datePublished" datetime="2017-10-18T11:36:00+08:00">2017-10-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-16 17:32:38" itemprop="dateModified" datetime="2018-01-16T17:32:38+08:00">2018-01-16</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/mac/" itemprop="url" rel="index"><span itemprop="name">mac</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h5 id="下载安装镜像-制作安装U盘"><a href="#下载安装镜像-制作安装U盘" class="headerlink" title="下载安装镜像,制作安装U盘"></a>下载安装镜像,制作安装U盘</h5><pre><code>http://bbs.pcbeta.com/forum.php?mod=viewthread&amp;tid=1670310&amp;highlight=10.11.3
+</code></pre><h5 id="配置EFI文件"><a href="#配置EFI文件" class="headerlink" title="配置EFI文件"></a>配置EFI文件</h5><pre><code>http://bbs.pcbeta.com/viewthread-1712049-1-1.html
+</code></pre><p>config.plist配置文件安装前更改nv_diable=1参数，进系统后安装web driver驱动后重启，改回参数nvda_driver=1</p>
+<h5 id="安装遇到问题的解决方法"><a href="#安装遇到问题的解决方法" class="headerlink" title="安装遇到问题的解决方法"></a>安装遇到问题的解决方法</h5><p>问题一： 应用程序副本不能验证 它在下载过程中可能已遭破坏或篡改</p>
+<pre><code>解决方法：安装界面选择：实用工具-终端-输入：date 122014102015.30，回车再开始安装
+</code></pre><p>问题二：安装第二遍的时候重启，解决方法：</p>
+<pre><code>解决方法： IAProductInfo.zip  下载此文件解压，用TransMac复制到U盘的系统文件夹（http://bbs.pcbeta.com/forum.php?mod=viewthread&amp;tid=1670310&amp;highlight=10.11.3）
+</code></pre><h5 id="驱动声卡、网卡和显卡"><a href="#驱动声卡、网卡和显卡" class="headerlink" title="驱动声卡、网卡和显卡"></a>驱动声卡、网卡和显卡</h5><p>安装好后，声卡，网卡已驱动，显卡能识别；使用无线方式的链接，有一个百度出品的-小度WIFI<br>驱动无线网卡（小度WiFi）：</p>
+<pre><code>http://bbs.pcbeta.com/forum.php?mod=viewthread&amp;tid=1726800&amp;highlight=%D0%A1%B6%C8WiFi
+</code></pre><h5 id="完善黑苹果"><a href="#完善黑苹果" class="headerlink" title="完善黑苹果"></a>完善黑苹果</h5><p><strong> 各软件官方下载地址</strong><br><strong><em> Clover EFI bootloader</em></strong></p>
+<pre><code>https://sourceforge.net/projects/cloverefiboot/  
+</code></pre><p><strong><em> Clover Configurator</em></strong></p>
+<pre><code>http://mackie100projects.altervista.org/download-clover-configurator/
+</code></pre><p><strong><em> Kext Wizard</em></strong></p>
+<pre><code>http://www.insanelymac.com/forum/topic/253395-kext-wizard-easy-to-use-kext-installer-and-more/
+</code></pre><p><strong><em> hwsensors</em></strong></p>
+<pre><code>http://www.hwsensors.com/releases     (Binaries)
+</code></pre><p><strong><em> ACPIBatteryManager.kext</em></strong></p>
+<pre><code>https://bitbucket.org/RehabMan/os-x-acpi-battery-driver/downloads
+</code></pre><p><strong><em> BTFirmwareUploader.kext </em></strong> </p>
+<pre><code>https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads
+</code></pre>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://flyleaf.fun/2017/10/07/对付熊孩子的方法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jeffrey">
+      <meta itemprop="description" content="叶子也会飞的个人博客">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="叶子也会飞">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2017/10/07/对付熊孩子的方法/" class="post-title-link" itemprop="url">对付熊孩子的方法</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-10-07 11:53:00" itemprop="dateCreated datePublished" datetime="2017-10-07T11:53:00+08:00">2017-10-07</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-17 11:57:30" itemprop="dateModified" datetime="2018-01-17T11:57:30+08:00">2018-01-17</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/psychology/" itemprop="url" rel="index"><span itemprop="name">psychology</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>一群熊孩子每天在一位老大爷门前玩耍，非常吵，影响着大爷休息。大爷觉得很烦。<br>于是，他出来给了每个孩子20块钱；<br>对他们说：“你们真棒，把我家都热闹起来了，我觉得我也年轻很多了，感谢你们，这些钱你们拿去买吃的吧！”熊孩子们好高兴，拿着钱就跑了。<br>第二天，继续来到老大爷家门口吵吵闹闹。大爷又出来，给了他们没人10块钱，并解释说：“我老了，没多少收入，今天只能给你们每人10块钱！”孩子们，有点小失落，可是还是开开心心的拿着钱跑了。<br>第三天，老人只给每个孩子2块钱。<br>孩子们怒了，对着大爷就骂：“你当我们是什么啊，一天才2块钱，知道我们为了把你这弄的热热闹闹的每天多辛苦啊！每个孩子都把大爷骂了一顿，并且发誓再也不想见到大爷了！  </p>
+<p>现在的熊孩子显然不太好管教。。。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://flyleaf.fun/2017/01/16/Python之禅/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jeffrey">
+      <meta itemprop="description" content="叶子也会飞的个人博客">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="叶子也会飞">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2017/01/16/Python之禅/" class="post-title-link" itemprop="url">Python之禅</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-01-16 00:26:00" itemprop="dateCreated datePublished" datetime="2017-01-16T00:26:00+08:00">2017-01-16</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-16 17:33:26" itemprop="dateModified" datetime="2018-01-16T17:33:26+08:00">2018-01-16</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong><em> The Zen of Python, by Tim Peters </em></strong>  </p>
+<p>Beautiful is better than ugly.<br>Explicit is better than implicit.<br>Simple is better than complex.<br>Complex is better than complicated.<br>Flat is better than nested.<br>Sparse is better than dense.<br>Readability counts.<br>Special cases aren’t special enough to break the rules.<br>Although practicality beats purity.<br>Errors should never pass silently.<br>Unless explicitly silenced.<br>In the face of ambiguity, refuse the temptation to guess.<br>There should be one— and preferably only one —obvious way to do it.<br>Although that way may not be obvious at first unless you’re Dutch.<br>Now is better than never.<br>Although never is often better than right now.<br>If the implementation is hard to explain, it’s a bad idea.<br>If the implementation is easy to explain, it may be a good idea.<br>Namespaces are one honking great idea — let’s do more of those!</p>
+<h5 id="翻译和解释"><a href="#翻译和解释" class="headerlink" title="翻译和解释:"></a>翻译和解释:</h5><p><strong><em> Python之禅 by Tim Peters</em></strong><br>优美胜于丑陋（Python 以编写优美的代码为目标)<br>明了胜于晦涩（优美的代码应当是明了的，命名规范，风格相似）<br>简洁胜于复杂（优美的代码应当是简洁的，不要有复杂的内部实现）<br>复杂胜于凌乱（如果复杂不可避免，那代码间也不能有难懂的关系，要保持接口简洁）<br>扁平胜于嵌套（优美的代码应当是扁平的，不能有太多的嵌套）<br>间隔胜于紧凑（优美的代码有适当的间隔，不要奢望一行代码解决问题）<br>可读性很重要（优美的代码是可读的）<br>即便假借特例的实用性之名，也不可违背这些规则（这些规则至高无上）<br>不要包容所有错误，除非你确定需要这样做（精准地捕获异常，不写 except:pass 风格的代码）<br>当存在多种可能，不要尝试去猜测<br>而是尽量找一种，最好是唯一一种明显的解决方案（如果不确定，就用穷举法）<br>虽然这并不容易，因为你不是 Python 之父（这里的 Dutch 是指 Guido ）<br>做也许好过不做，但不假思索就动手还不如不做（动手之前要细思量）<br>如果你无法向人描述你的方案，那肯定不是一个好方案；反之亦然（方案测评标准）<br>命名空间是一种绝妙的理念，我们应当多加利用（倡导与号召）</p>
+<hr>
+<p>本文来源于网络收集，侵删！</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Jeffrey">
+            
+              <p class="site-author-name" itemprop="name">Jeffrey</p>
+              <div class="site-description motion-element" itemprop="description">叶子也会飞的个人博客</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://flyleaf.fun" title="博客 &rarr; http://flyleaf.fun"><i class="fa fa-fw fa-home"></i>博客</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="/images/weixin.jpg" title="微信 &rarr; /images/weixin.jpg"><i class="fa fa-fw fa-weixin"></i>微信</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://www.bigzhekou.com" title="淘宝优惠券 &rarr; http://www.bigzhekou.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-truck"></i>淘宝优惠券</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.baidu.com" title="占位 &rarr; https://www.baidu.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-snowflake-o"></i>占位</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jeffrey</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.0.1</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.1"></script>
+
+  <script src="/js/src/motion.js?v=7.0.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=7.0.1"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=7.0.1"></script>
+
+
+
+
+  
+
+  
+
+
+  <script src="/js/src/next-boot.js?v=7.0.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

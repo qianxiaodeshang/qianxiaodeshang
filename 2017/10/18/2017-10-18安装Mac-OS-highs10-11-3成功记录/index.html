@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.1">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.1" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.0.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="下载安装镜像,制作安装U盘http://bbs.pcbeta.com/forum.php?mod=viewthread&amp;amp;tid=1670310&amp;amp;highlight=10.11.3 配置EFI文件http://bbs.pcbeta.com/viewthread-1712049-1-1.html config.plist配置文件安装前更改nv_diable=1参数，进系统后安装web">
+<meta name="keywords" content="黑苹果">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2017.10.18安装Mac OS highs10.11.3成功记录">
+<meta property="og:url" content="http://flyleaf.fun/2017/10/18/2017-10-18安装Mac-OS-highs10-11-3成功记录/index.html">
+<meta property="og:site_name" content="叶子也会飞">
+<meta property="og:description" content="下载安装镜像,制作安装U盘http://bbs.pcbeta.com/forum.php?mod=viewthread&amp;amp;tid=1670310&amp;amp;highlight=10.11.3 配置EFI文件http://bbs.pcbeta.com/viewthread-1712049-1-1.html config.plist配置文件安装前更改nv_diable=1参数，进系统后安装web">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-01-16T09:32:38.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2017.10.18安装Mac OS highs10.11.3成功记录">
+<meta name="twitter:description" content="下载安装镜像,制作安装U盘http://bbs.pcbeta.com/forum.php?mod=viewthread&amp;amp;tid=1670310&amp;amp;highlight=10.11.3 配置EFI文件http://bbs.pcbeta.com/viewthread-1712049-1-1.html config.plist配置文件安装前更改nv_diable=1参数，进系统后安装web">
+
+
+
+
+
+
+  <link rel="canonical" href="http://flyleaf.fun/2017/10/18/2017-10-18安装Mac-OS-highs10-11-3成功记录/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>2017.10.18安装Mac OS highs10.11.3成功记录 | 叶子也会飞</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">叶子也会飞</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">That‘s awsome！</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-python">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/python" rel="section"><i class="menu-item-icon fa fa-fw fa-code"></i> <br>Python</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-mac">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/mac" rel="section"><i class="menu-item-icon fa fa-fw fa-laptop"></i> <br>Mac</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-网络">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/network" rel="section"><i class="menu-item-icon fa fa-fw fa-internet-explorer"></i> <br>网络</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-心理学">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/psychology" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>心理学</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://flyleaf.fun/2017/10/18/2017-10-18安装Mac-OS-highs10-11-3成功记录/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jeffrey">
+      <meta itemprop="description" content="叶子也会飞的个人博客">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="叶子也会飞">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">2017.10.18安装Mac OS highs10.11.3成功记录
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-10-18 11:36:00" itemprop="dateCreated datePublished" datetime="2017-10-18T11:36:00+08:00">2017-10-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-01-16 17:32:38" itemprop="dateModified" datetime="2018-01-16T17:32:38+08:00">2018-01-16</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/mac/" itemprop="url" rel="index"><span itemprop="name">mac</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h5 id="下载安装镜像-制作安装U盘"><a href="#下载安装镜像-制作安装U盘" class="headerlink" title="下载安装镜像,制作安装U盘"></a>下载安装镜像,制作安装U盘</h5><pre><code>http://bbs.pcbeta.com/forum.php?mod=viewthread&amp;tid=1670310&amp;highlight=10.11.3
+</code></pre><h5 id="配置EFI文件"><a href="#配置EFI文件" class="headerlink" title="配置EFI文件"></a>配置EFI文件</h5><pre><code>http://bbs.pcbeta.com/viewthread-1712049-1-1.html
+</code></pre><p>config.plist配置文件安装前更改nv_diable=1参数，进系统后安装web driver驱动后重启，改回参数nvda_driver=1</p>
+<h5 id="安装遇到问题的解决方法"><a href="#安装遇到问题的解决方法" class="headerlink" title="安装遇到问题的解决方法"></a>安装遇到问题的解决方法</h5><p>问题一： 应用程序副本不能验证 它在下载过程中可能已遭破坏或篡改</p>
+<pre><code>解决方法：安装界面选择：实用工具-终端-输入：date 122014102015.30，回车再开始安装
+</code></pre><p>问题二：安装第二遍的时候重启，解决方法：</p>
+<pre><code>解决方法： IAProductInfo.zip  下载此文件解压，用TransMac复制到U盘的系统文件夹（http://bbs.pcbeta.com/forum.php?mod=viewthread&amp;tid=1670310&amp;highlight=10.11.3）
+</code></pre><h5 id="驱动声卡、网卡和显卡"><a href="#驱动声卡、网卡和显卡" class="headerlink" title="驱动声卡、网卡和显卡"></a>驱动声卡、网卡和显卡</h5><p>安装好后，声卡，网卡已驱动，显卡能识别；使用无线方式的链接，有一个百度出品的-小度WIFI<br>驱动无线网卡（小度WiFi）：</p>
+<pre><code>http://bbs.pcbeta.com/forum.php?mod=viewthread&amp;tid=1726800&amp;highlight=%D0%A1%B6%C8WiFi
+</code></pre><h5 id="完善黑苹果"><a href="#完善黑苹果" class="headerlink" title="完善黑苹果"></a>完善黑苹果</h5><p><strong> 各软件官方下载地址</strong><br><strong><em> Clover EFI bootloader</em></strong></p>
+<pre><code>https://sourceforge.net/projects/cloverefiboot/  
+</code></pre><p><strong><em> Clover Configurator</em></strong></p>
+<pre><code>http://mackie100projects.altervista.org/download-clover-configurator/
+</code></pre><p><strong><em> Kext Wizard</em></strong></p>
+<pre><code>http://www.insanelymac.com/forum/topic/253395-kext-wizard-easy-to-use-kext-installer-and-more/
+</code></pre><p><strong><em> hwsensors</em></strong></p>
+<pre><code>http://www.hwsensors.com/releases     (Binaries)
+</code></pre><p><strong><em> ACPIBatteryManager.kext</em></strong></p>
+<pre><code>https://bitbucket.org/RehabMan/os-x-acpi-battery-driver/downloads
+</code></pre><p><strong><em> BTFirmwareUploader.kext </em></strong> </p>
+<pre><code>https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads
+</code></pre>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/黑苹果/" rel="tag"># 黑苹果</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/07/对付熊孩子的方法/" rel="next" title="对付熊孩子的方法">
+                <i class="fa fa-chevron-left"></i> 对付熊孩子的方法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/22/用Python随机生成一组大乐透号码/" rel="prev" title="用Python随机生成一组大乐透号码">
+                用Python随机生成一组大乐透号码 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Jeffrey">
+            
+              <p class="site-author-name" itemprop="name">Jeffrey</p>
+              <div class="site-description motion-element" itemprop="description">叶子也会飞的个人博客</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://flyleaf.fun" title="博客 &rarr; http://flyleaf.fun"><i class="fa fa-fw fa-home"></i>博客</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="/images/weixin.jpg" title="微信 &rarr; /images/weixin.jpg"><i class="fa fa-fw fa-weixin"></i>微信</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="http://www.bigzhekou.com" title="淘宝优惠券 &rarr; http://www.bigzhekou.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-truck"></i>淘宝优惠券</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.baidu.com" title="占位 &rarr; https://www.baidu.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-snowflake-o"></i>占位</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#下载安装镜像-制作安装U盘"><span class="nav-number">1.</span> <span class="nav-text">下载安装镜像,制作安装U盘</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#配置EFI文件"><span class="nav-number">2.</span> <span class="nav-text">配置EFI文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#安装遇到问题的解决方法"><span class="nav-number">3.</span> <span class="nav-text">安装遇到问题的解决方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#驱动声卡、网卡和显卡"><span class="nav-number">4.</span> <span class="nav-text">驱动声卡、网卡和显卡</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#完善黑苹果"><span class="nav-number">5.</span> <span class="nav-text">完善黑苹果</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jeffrey</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.0.1</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.1"></script>
+
+  <script src="/js/src/motion.js?v=7.0.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=7.0.1"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=7.0.1"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
+
+  
+
+
+  <script src="/js/src/next-boot.js?v=7.0.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
