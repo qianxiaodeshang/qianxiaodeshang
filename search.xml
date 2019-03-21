@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Markdown之表格宽度设置]]></title>
+    <url>%2F2018%2F01%2F18%2FMarkdown%E4%B9%8B%E8%A1%A8%E6%A0%BC%E5%AE%BD%E5%BA%A6%E8%AE%BE%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[在表格前面添加CSS代码可以控制表格的宽度123456789&lt;style&gt;table th:first-of-type &#123; #first表示表格第一列 width: 100px; # 可使用%比例&#125;&lt;/style&gt;&lt;!-- 下方是表格的 Markdown 语法 --!&gt;名称|值|备注---|---|--- 未设置宽度表格宽度时，每一列都是一样宽，严重影响美观设置宽度表格后： table th:first-of-type { width: 13%; } 模式 描述 \w 匹配字母数字及下划线 \W 匹配非字母数字下划线 \s 匹配任意空白字符，等价于 [\t\n\r\f].]]></content>
+      <categories>
+        <category>network</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Mac 使用 Alfred 替代 Spotlight]]></title>
+    <url>%2F2018%2F01%2F17%2FMac-%E4%BD%BF%E7%94%A8-Alfred-%E6%9B%BF%E4%BB%A3-Spotlight%2F</url>
+    <content type="text"><![CDATA[安装Alfred先试试免费版本，Alfred官网 关闭spotlight 禁用spotlight服务sudo mdutil -a -i off 删除菜单栏spotlight图标 123cd /System/Library/CoreServices/sudo mv Search.bundle/ Search2.bundle/然后在活动监视器退出 SystemUIServer 进程，或者注销再登陆。 Spotlight恢复方法 启用spotlight服务，sudo mdutil -a -i on 恢复菜单栏图标12cd /System/Library/CoreServices/sudo mv Search2.bundle/ Search.bundle/ 然后在活动监视器退出 SystemUIServer 进程，或者注销再登陆。 配置Alfred Webserch搜索设置 添加百度搜索：链接：https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;wd={query}title：百度keyword：bd # 自行设置调用关键词。输入bd XXX 即可用百度搜索设置图标：复制百度icon图片到右边方框内 淘宝搜索Url：https://s.taobao.com/search?oe=utf-8&amp;f=8&amp;q={query}title：淘宝keyword：tb设置图标：复制淘宝icon图片到右边方框内 githuburl：https://github.com/search?utf8=%E2%9C%93&amp;q={query}title：githubkeyword：github设置图标：复制github的icon图片到右边方框内 设置默认搜索引擎为百度 Features &gt; Default Results &gt; Fallbacks &gt;Setup fallbacks results 点击右下角 + &gt; Custom Search &gt; 选择刚添加的百度 &gt; 保存完成！]]></content>
+      <categories>
+        <category>mac</category>
+      </categories>
+      <tags>
+        <tag>mac</tag>
+        <tag>alfred</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[正则表达式]]></title>
+    <url>%2F2018%2F01%2F17%2F%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[Python 之正则表达式，使用前必须先导入re模块 常见匹配模式 table th:first-of-type { width: 13%; } 模式 描述 \w 匹配字母数字及下划线 \W 匹配非字母数字下划线 \s 匹配任意空白字符，等价于 [\t\n\r\f]. \S 匹配任意非空字符 \d 匹配任意数字，等价于 [0-9] \D 匹配任意非数字 \A 匹配字符串开始 \Z 匹配字符串结束，如果是存在换行，只匹配到换行前的结束字符串 \z 匹配字符串结束 \G 匹配最后匹配完成的位置 \n 匹配一个换行符 \t 匹配一个制表符 ^ 匹配字符串的开头 $ 匹配字符串的末尾。 . 匹配任意字符，除了换行符，当re.DOTALL标记被指定时，则可以匹配包括换行符的任意字符。 […] 用来表示一组字符,单独列出：[amk] 匹配 ‘a’，’m’或’k’ [^…] 不在[]中的字符：[^abc] 匹配除了a,b,c之外的字符。 * 匹配0个或多个的表达式。 + 匹配1个或多个的表达式。 ? 匹配0个或1个由前面的正则表达式定义的片段，非贪婪方式 {n} 精确匹配n个前面表达式。 {n, m} 匹配 n 到 m 次由前面的正则表达式定义的片段，贪婪方式 a&#124;b 匹配a或b ( ) 匹配括号内的表达式，也表示一个组 用法re.match() 待补充]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>正则表达式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Mac使用技巧之快速翻译单词]]></title>
+    <url>%2F2018%2F01%2F16%2FMac%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E4%B9%8B%E5%BF%AB%E9%80%9F%E7%BF%BB%E8%AF%91%E5%8D%95%E8%AF%8D%2F</url>
+    <content type="text"><![CDATA[使用mac快速查看单词翻译（定义）的方法 在spotlight中输入你想查询的单词，点击定义一栏，即可查看翻译结果 用鼠标选中文字，点击鼠标右键，查询“xxx” 将鼠标放在需要翻译的单词上面，然后同时按Control + Command + D，即可查看单词的翻译，在文字不可选取的情况下此方法比较方便]]></content>
+      <categories>
+        <category>mac</category>
+      </categories>
+      <tags>
+        <tag>mac</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[利用GitHub+hexo搭建个人博客并绑定域名]]></title>
+    <url>%2F2018%2F01%2F15%2F%E5%88%A9%E7%94%A8GitHub-hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%2F</url>
+    <content type="text"><![CDATA[注册GitHub账号并添加库新建一个库，名字格式为：yourname.github.ioyourname就是你的github账户名 安装gitGitg官网 安装node.jsNode官网 安装hexo使用命令行安装hexo: npm install -g hexo-cli参见：Hexo官方文档 建立网站123hexo init floder # floder为网站指定文件夹cd floder # 转到指定的文件夹npm install #运行安装 安装插件 后台管理插件命令： npm install --save hexo-admin安装好后访问 localhost:4000/admin设置后台账号密码，底部会生成admin配置信息，复制到_config.yml网站配置文件中。 更换hexo主题 将下载的主题文件夹放在网站文件夹下的themes里面 更改网站配置文件，找到themes修改默认主题为新下载的主题名字 更改网站配置和主题配置 修改_config.yml文件里面的标题、描述和作者等信息。 配置deploy，配置好才能上传至github。 根据主题的帮助文档修改主题配置文件里面的导航栏、分类、图标、社交信息等。 上传网站至github及hexo常用命令1234hexo clean # 清楚缓存hexo generate # 生成静态文件hexo server # 启动服务器，浏览器访问`loaclhost:4000`检查网站hexo deploy # 部署网站，上传至github 绑定域名用记事本新建一个文件命名为CNAME（无后缀），里面写入你的域名example.com,不要加http://和www。将这个CNAME文件放到主题里面的source文件夹里面。 阿里云后台添加2条解析记录 记录类型 主机记录 记录值 CNAME a yourname.github.io CNAME www yourname.github.io 等待一会儿就可以用自己的域名访问了！ 解决使用Https://提示网站不安全的问题待补充]]></content>
+      <categories>
+        <category>network</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Python批量下载网易云音乐歌曲]]></title>
+    <url>%2F2017%2F10%2F26%2FPython%E6%89%B9%E9%87%8F%E4%B8%8B%E8%BD%BD%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%AD%8C%E6%9B%B2%2F</url>
+    <content type="text"><![CDATA[网易云音乐真实地址：http://music.163.com/song/media/outer/url?id= + (歌曲ID) + .mp3 12345678910111213141516import requestsimport urlliburl_list = input ('请粘贴歌单网址：')# 获取榜单网址gedan_id = url_list.split('id=')[1]# 获取榜单IDgedan_api = 'http://music.163.com/api/playlist/detail?id=' + gedan_id# 获取歌单APIr = requests.get(gedan_api)arr = r.json()['result']['tracks'] # json解析songs = input ('请输入要下载的歌曲数量：')# 输入要下载音乐的数量，1到100。for i in range(int(songs)): name = arr[i]['name'] + '.mp3' if '/' in name: name = name.split('/')[0] + '.mp3' link = 'http://music.163.com/song/media/outer/url?id=' + str(arr[i]['id'])+'.mp3' urllib.request.urlretrieve(link, 'Python批量下载音乐\\' + name) # 提前要创建文件夹 print(str(i+1) + " " + name + ' 下载完成')print ('歌曲已下载完成！共 %s 首歌曲！'%songs) 代码是从知乎上复制过来稍作修改的，忘记在哪个问题里面了]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[用Python随机生成一组大乐透号码]]></title>
+    <url>%2F2017%2F10%2F22%2F%E7%94%A8Python%E9%9A%8F%E6%9C%BA%E7%94%9F%E6%88%90%E4%B8%80%E7%BB%84%E5%A4%A7%E4%B9%90%E9%80%8F%E5%8F%B7%E7%A0%81%2F</url>
+    <content type="text"><![CDATA[大乐透玩法介绍单注号码为5+2，共7个数字。 前面5个数为1-35，任选其中5个数且不可重复； 后面2个数为1-12，任选其中2个数且不可重复。 使用 random 模块 的 sample函数 1234import randomnumbs5 = random.sample(range(1,36),5)numbs2 = random.sample(range(1,13),2)print (&apos;机选一注双色球号码为：&apos;,numbs5,&apos;+&apos;,numbs2) sample 函数介绍：从指定序列中生成 N 个随机数，并且不会重复。]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[2017.10.18安装Mac OS highs10.11.3成功记录]]></title>
+    <url>%2F2017%2F10%2F18%2F2017-10-18%E5%AE%89%E8%A3%85Mac-OS-highs10-11-3%E6%88%90%E5%8A%9F%E8%AE%B0%E5%BD%95%2F</url>
+    <content type="text"><![CDATA[下载安装镜像,制作安装U盘http://bbs.pcbeta.com/forum.php?mod=viewthread&amp;tid=1670310&amp;highlight=10.11.3 配置EFI文件http://bbs.pcbeta.com/viewthread-1712049-1-1.html config.plist配置文件安装前更改nv_diable=1参数，进系统后安装web driver驱动后重启，改回参数nvda_driver=1 安装遇到问题的解决方法问题一： 应用程序副本不能验证 它在下载过程中可能已遭破坏或篡改 解决方法：安装界面选择：实用工具-终端-输入：date 122014102015.30，回车再开始安装 问题二：安装第二遍的时候重启，解决方法： 解决方法： IAProductInfo.zip 下载此文件解压，用TransMac复制到U盘的系统文件夹（http://bbs.pcbeta.com/forum.php?mod=viewthread&amp;tid=1670310&amp;highlight=10.11.3） 驱动声卡、网卡和显卡安装好后，声卡，网卡已驱动，显卡能识别；使用无线方式的链接，有一个百度出品的-小度WIFI驱动无线网卡（小度WiFi）： http://bbs.pcbeta.com/forum.php?mod=viewthread&amp;tid=1726800&amp;highlight=%D0%A1%B6%C8WiFi 完善黑苹果 各软件官方下载地址 Clover EFI bootloader https://sourceforge.net/projects/cloverefiboot/ Clover Configurator http://mackie100projects.altervista.org/download-clover-configurator/ Kext Wizard http://www.insanelymac.com/forum/topic/253395-kext-wizard-easy-to-use-kext-installer-and-more/ hwsensors http://www.hwsensors.com/releases (Binaries) ACPIBatteryManager.kext https://bitbucket.org/RehabMan/os-x-acpi-battery-driver/downloads BTFirmwareUploader.kext https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads]]></content>
+      <categories>
+        <category>mac</category>
+      </categories>
+      <tags>
+        <tag>黑苹果</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[对付熊孩子的方法]]></title>
+    <url>%2F2017%2F10%2F07%2F%E5%AF%B9%E4%BB%98%E7%86%8A%E5%AD%A9%E5%AD%90%E7%9A%84%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[一群熊孩子每天在一位老大爷门前玩耍，非常吵，影响着大爷休息。大爷觉得很烦。于是，他出来给了每个孩子20块钱；对他们说：“你们真棒，把我家都热闹起来了，我觉得我也年轻很多了，感谢你们，这些钱你们拿去买吃的吧！”熊孩子们好高兴，拿着钱就跑了。第二天，继续来到老大爷家门口吵吵闹闹。大爷又出来，给了他们没人10块钱，并解释说：“我老了，没多少收入，今天只能给你们每人10块钱！”孩子们，有点小失落，可是还是开开心心的拿着钱跑了。第三天，老人只给每个孩子2块钱。孩子们怒了，对着大爷就骂：“你当我们是什么啊，一天才2块钱，知道我们为了把你这弄的热热闹闹的每天多辛苦啊！每个孩子都把大爷骂了一顿，并且发誓再也不想见到大爷了！ 现在的熊孩子显然不太好管教。。。]]></content>
+      <categories>
+        <category>psychology</category>
+      </categories>
+      <tags>
+        <tag>心理学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Python之禅]]></title>
+    <url>%2F2017%2F01%2F16%2FPython%E4%B9%8B%E7%A6%85%2F</url>
+    <content type="text"><![CDATA[The Zen of Python, by Tim Peters Beautiful is better than ugly.Explicit is better than implicit.Simple is better than complex.Complex is better than complicated.Flat is better than nested.Sparse is better than dense.Readability counts.Special cases aren’t special enough to break the rules.Although practicality beats purity.Errors should never pass silently.Unless explicitly silenced.In the face of ambiguity, refuse the temptation to guess.There should be one— and preferably only one —obvious way to do it.Although that way may not be obvious at first unless you’re Dutch.Now is better than never.Although never is often better than right now.If the implementation is hard to explain, it’s a bad idea.If the implementation is easy to explain, it may be a good idea.Namespaces are one honking great idea — let’s do more of those! 翻译和解释: Python之禅 by Tim Peters优美胜于丑陋（Python 以编写优美的代码为目标)明了胜于晦涩（优美的代码应当是明了的，命名规范，风格相似）简洁胜于复杂（优美的代码应当是简洁的，不要有复杂的内部实现）复杂胜于凌乱（如果复杂不可避免，那代码间也不能有难懂的关系，要保持接口简洁）扁平胜于嵌套（优美的代码应当是扁平的，不能有太多的嵌套）间隔胜于紧凑（优美的代码有适当的间隔，不要奢望一行代码解决问题）可读性很重要（优美的代码是可读的）即便假借特例的实用性之名，也不可违背这些规则（这些规则至高无上）不要包容所有错误，除非你确定需要这样做（精准地捕获异常，不写 except:pass 风格的代码）当存在多种可能，不要尝试去猜测而是尽量找一种，最好是唯一一种明显的解决方案（如果不确定，就用穷举法）虽然这并不容易，因为你不是 Python 之父（这里的 Dutch 是指 Guido ）做也许好过不做，但不假思索就动手还不如不做（动手之前要细思量）如果你无法向人描述你的方案，那肯定不是一个好方案；反之亦然（方案测评标准）命名空间是一种绝妙的理念，我们应当多加利用（倡导与号召） 本文来源于网络收集，侵删！]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+</search>
